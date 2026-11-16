@@ -1,1 +1,16 @@
-{"framework":"nextjs"}
+{
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "takassever.com"
+        }
+      ],
+      "destination": "https://www.takassever.com/:path*",
+      "permanent": true
+    }
+  ]
+}
